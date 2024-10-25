@@ -41,6 +41,7 @@ public class Admon extends javax.swing.JFrame {
         RegEsp = new javax.swing.JButton();
         ModEsp = new javax.swing.JButton();
         NovEsp = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -55,14 +56,19 @@ public class Admon extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(30, 63, 70));
+        jPanel2.setBackground(new java.awt.Color(227, 181, 102));
 
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Propietario");
 
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Empleado");
 
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Espacios");
 
+        RegProp.setBackground(new java.awt.Color(244, 209, 127));
+        RegProp.setForeground(new java.awt.Color(0, 0, 0));
         RegProp.setText("Registro");
         RegProp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,8 +76,12 @@ public class Admon extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setBackground(new java.awt.Color(244, 209, 127));
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
         jButton2.setText("Multas");
 
+        ModProp.setBackground(new java.awt.Color(244, 209, 127));
+        ModProp.setForeground(new java.awt.Color(0, 0, 0));
         ModProp.setText("Modificar");
         ModProp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -79,8 +89,12 @@ public class Admon extends javax.swing.JFrame {
             }
         });
 
+        FactProp.setBackground(new java.awt.Color(244, 209, 127));
+        FactProp.setForeground(new java.awt.Color(0, 0, 0));
         FactProp.setText("Facturación");
 
+        RegEmp.setBackground(new java.awt.Color(244, 209, 127));
+        RegEmp.setForeground(new java.awt.Color(0, 0, 0));
         RegEmp.setText("Registro");
         RegEmp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,10 +102,16 @@ public class Admon extends javax.swing.JFrame {
             }
         });
 
+        ModEmp.setBackground(new java.awt.Color(244, 209, 127));
+        ModEmp.setForeground(new java.awt.Color(0, 0, 0));
         ModEmp.setText("Modificar");
 
+        FactEmp.setBackground(new java.awt.Color(244, 209, 127));
+        FactEmp.setForeground(new java.awt.Color(0, 0, 0));
         FactEmp.setText("Facturación");
 
+        RegEsp.setBackground(new java.awt.Color(244, 209, 127));
+        RegEsp.setForeground(new java.awt.Color(0, 0, 0));
         RegEsp.setText("Registro");
         RegEsp.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,16 +119,24 @@ public class Admon extends javax.swing.JFrame {
             }
         });
 
+        ModEsp.setBackground(new java.awt.Color(244, 209, 127));
+        ModEsp.setForeground(new java.awt.Color(0, 0, 0));
         ModEsp.setText("Modificar");
 
+        NovEsp.setBackground(new java.awt.Color(244, 209, 127));
+        NovEsp.setForeground(new java.awt.Color(0, 0, 0));
         NovEsp.setText("Novedades");
+
+        jLabel4.setText("Imagen");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(147, 147, 147)
+                .addGap(22, 22, 22)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(75, 75, 75)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -155,7 +183,9 @@ public class Admon extends javax.swing.JFrame {
                     .addComponent(ModProp)
                     .addComponent(FactProp))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel2)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RegEmp)
@@ -254,6 +284,7 @@ public class Admon extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables

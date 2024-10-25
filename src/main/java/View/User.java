@@ -4,6 +4,8 @@
  */
 package View;
 
+import Utilidades.Factura;
+
 /**
  *
  * @author andre
@@ -11,7 +13,7 @@ package View;
 public class User extends javax.swing.JFrame {
 
     /**
-     * Creates new form User
+     * Creates new form Admon
      */
     public User() {
         initComponents();
@@ -26,21 +28,237 @@ public class User extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        jFrame1 = new javax.swing.JFrame();
+        jFrame2 = new javax.swing.JFrame();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        RegProp = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        ModProp = new javax.swing.JButton();
+        RegEmp = new javax.swing.JButton();
+        ModEmp = new javax.swing.JButton();
+        FactEmp = new javax.swing.JButton();
+        RegEsp = new javax.swing.JButton();
+        ModEsp = new javax.swing.JButton();
+        NovEsp = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+        jFrame1.getContentPane().setLayout(jFrame1Layout);
+        jFrame1Layout.setHorizontalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jFrame1Layout.setVerticalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jFrame2Layout = new javax.swing.GroupLayout(jFrame2.getContentPane());
+        jFrame2.getContentPane().setLayout(jFrame2Layout);
+        jFrame2Layout.setHorizontalGroup(
+            jFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jFrame2Layout.setVerticalGroup(
+            jFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel2.setBackground(new java.awt.Color(227, 181, 102));
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel1.setText("Facturación");
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setText("Novedades");
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setText("Comunidad");
+
+        RegProp.setBackground(new java.awt.Color(244, 209, 127));
+        RegProp.setForeground(new java.awt.Color(0, 0, 0));
+        RegProp.setText("Consultar");
+        RegProp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RegPropActionPerformed(evt);
+            }
+        });
+
+        jButton2.setBackground(new java.awt.Color(244, 209, 127));
+        jButton2.setForeground(new java.awt.Color(0, 0, 0));
+        jButton2.setText("Multas");
+
+        ModProp.setBackground(new java.awt.Color(244, 209, 127));
+        ModProp.setForeground(new java.awt.Color(0, 0, 0));
+        ModProp.setText("Pagar");
+        ModProp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ModPropActionPerformed(evt);
+            }
+        });
+
+        RegEmp.setBackground(new java.awt.Color(244, 209, 127));
+        RegEmp.setForeground(new java.awt.Color(0, 0, 0));
+        RegEmp.setText("Novedades");
+        RegEmp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RegEmpActionPerformed(evt);
+            }
+        });
+
+        ModEmp.setBackground(new java.awt.Color(244, 209, 127));
+        ModEmp.setForeground(new java.awt.Color(0, 0, 0));
+        ModEmp.setText("Calendario");
+
+        FactEmp.setBackground(new java.awt.Color(244, 209, 127));
+        FactEmp.setForeground(new java.awt.Color(0, 0, 0));
+        FactEmp.setText("Horarios");
+
+        RegEsp.setBackground(new java.awt.Color(244, 209, 127));
+        RegEsp.setForeground(new java.awt.Color(0, 0, 0));
+        RegEsp.setText("Vecinos");
+        RegEsp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RegEspActionPerformed(evt);
+            }
+        });
+
+        ModEsp.setBackground(new java.awt.Color(244, 209, 127));
+        ModEsp.setForeground(new java.awt.Color(0, 0, 0));
+        ModEsp.setText("Eventos");
+
+        NovEsp.setBackground(new java.awt.Color(244, 209, 127));
+        NovEsp.setForeground(new java.awt.Color(0, 0, 0));
+        NovEsp.setText("Novedades");
+
+        jLabel4.setText("Imagen");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(186, 186, 186)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel3))
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addComponent(RegEmp)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(ModEmp)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(FactEmp)
+                                .addGap(0, 53, Short.MAX_VALUE)))
+                        .addGroup(jPanel2Layout.createSequentialGroup()
+                            .addGap(6, 6, 6)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addComponent(RegEsp)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(ModEsp)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(NovEsp))
+                                .addGroup(jPanel2Layout.createSequentialGroup()
+                                    .addComponent(RegProp)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(ModProp)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jButton2)))
+                            .addGap(72, 72, 72))))
+                .addGap(89, 89, 89))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(246, 246, 246)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(124, 124, 124)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RegProp)
+                    .addComponent(jButton2)
+                    .addComponent(ModProp))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RegEmp)
+                    .addComponent(ModEmp)
+                    .addComponent(FactEmp))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RegEsp)
+                    .addComponent(NovEsp)
+                    .addComponent(ModEsp))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
+                .addComponent(jLabel4)
+                .addGap(60, 60, 60))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1024, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 768, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void RegPropActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegPropActionPerformed
+        // TODO add your handling code here:
+        Factura factura = new Factura();
+        factura.generarFactura("Juan Pérez", "150,000", "24/10/2024", "123456", "5B");
+
+    }//GEN-LAST:event_RegPropActionPerformed
+
+    private void RegEmpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegEmpActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RegEmpActionPerformed
+
+    private void RegEspActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegEspActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_RegEspActionPerformed
+
+    private void ModPropActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ModPropActionPerformed
+        // TODO add your handling code here:
+        ActualizarPropietario actProp = new ActualizarPropietario();
+        actProp.setVisible(true);
+    }//GEN-LAST:event_ModPropActionPerformed
 
     /**
      * @param args the command line arguments
@@ -68,6 +286,7 @@ public class User extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(User.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -78,5 +297,22 @@ public class User extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton FactEmp;
+    private javax.swing.JButton ModEmp;
+    private javax.swing.JButton ModEsp;
+    private javax.swing.JButton ModProp;
+    private javax.swing.JButton NovEsp;
+    private javax.swing.JButton RegEmp;
+    private javax.swing.JButton RegEsp;
+    private javax.swing.JButton RegProp;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JFrame jFrame1;
+    private javax.swing.JFrame jFrame2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }

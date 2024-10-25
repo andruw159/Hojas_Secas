@@ -139,7 +139,7 @@ public class ActualizarPropietario extends javax.swing.JFrame {
 
         jLabel13.setText("Motivo del pago:");
 
-        jLabel14.setText("Transporte:");
+        jLabel14.setText("N° Factura");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

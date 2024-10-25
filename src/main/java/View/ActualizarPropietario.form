@@ -372,7 +372,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel14">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Transporte:"/>
+            <Property name="text" type="java.lang.String" value="N&#xb0; Factura"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextFieldTransporte">
